@@ -1,0 +1,13 @@
+fun=@(x) (1./x.^3);                           % Give function
+a=input('Give limit a of integration : ');
+b=input('Give limit b of integration: ');
+n=input('Give number of subintervals : ');
+h=(b-a)/n; 
+t=0;
+
+while a<b
+     t=t+(h/2)*(fun(a)+fun(a+h));
+    a=a+h;
+end
+
+fprintf('\n The result of integration is % f using trapezoidal rule with % d subintervals \n',t,n);
