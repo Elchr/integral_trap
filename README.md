@@ -1,2 +1,2 @@
 # integral_trap
-Trapezoidal rule for integrating a function
+Trapezoidal rule for integrating a function in Matlab
